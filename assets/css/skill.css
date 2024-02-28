@@ -24,6 +24,7 @@ body {
 
 .skill-area {
     padding-top: 5%;
+    padding-bottom: 11%;
   }
   
   .custom {
@@ -97,7 +98,7 @@ body {
   }
   
   .bar-6 {
-    width: 90%;
+    width: 80%;
   }
   
   .bar-7 {
@@ -106,6 +107,10 @@ body {
   
   .bar-8 {
     width: 70%;
+  }
+
+  .bar-9 {
+    width: 90%;
   }
   
 @media  screen and (min-width: 768px) {
