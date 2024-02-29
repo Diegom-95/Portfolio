@@ -4,6 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "tCpFGUX_EwT_T8j9e",
+        });
+    })();
+  </script>
+  <script src="assets/script/script.js"></script>
   <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
     rel="stylesheet"/>
@@ -14,6 +25,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/skill.css">
   <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
   <title>Diego Maggioni - Web Developer</title>
 </head>
 <body>
@@ -160,6 +172,16 @@
   </div>
   </div> 
 </section>
+
+<!-- CONTACT FORM-->
+<form id="contacts"> 
+  <h3 class="contact-title">Contact me</h3>     
+  <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" />   
+  <input name="email" type="text" id="email" class="feedback-input" placeholder="Email" />
+  <input name="subject" type = "text" id="subject" class="feedback-input" placeholder="Subject"></textarea>
+  <textarea name="text" id="message" id="message" class="feedback-input" placeholder="Message"></textarea>
+  <input type="submit" onclick="sendMail()" value="SUBMIT">
+</form>
 
 
 <!-- SCRIPT -->
