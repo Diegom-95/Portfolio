@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #265073;
+  --max-width: 100%;
+}
+
+/* GENERAL STYLE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/Portfolio/assets/img/wallpaper.jpg");
+  background-size: cover;
+}
+
+
+.main h1 {
+  font-size: 40px;
+  color: #eee;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.projects-container {
+  margin-top: 40px;
+  display: flex;
+  margin: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project{
+  padding-bottom: 8%;
+}
+
+.project img {
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+  padding: 2% 8% 0 8%;
+  border-radius: 15%;
+
+}
+
+.project img:hover {
+  width: 410px;
+  height: 260px;
+}
+
+
+.project p {
+  text-align: center;
+  padding-top: 0px;
+  color: #eee;
+}
+
