@@ -51,7 +51,13 @@
     <div class="main">
       <div class="hero-text">
         <h3>Hi, There!</h3>
-        <h1>I Am <span class="input"></span></h1>
+        <h1 id="title-desktop">I Am <span class="input"></span></h1>  
+
+      <div class="hero-text-mobile">   <!-- TITLE FOR MOBILE-->
+        <h1>I Am </h1>
+        <h1 class="input-mobile"></h1>
+      </div>    
+
         <p>
           My name is Diego, I'm a full stack web developer based in Pontremoli, Italy. My passions are computer science, mountain and football. 
         </p>
@@ -69,10 +75,10 @@
 </section>   
 
    <!---- SKILLS-->
-<section class="skill-area">
+<section class="skill-area" id="skills">
   <div class="content">
     <div class="section-header">
-      <h2 id = "skills">My Skillset</h2>
+      <h2>My Skillset</h2>
     </div>
     <div class="wrapper custom">
       <div class="skill-box">
@@ -107,26 +113,26 @@
      
 
     <div class="skill-box">
-      <h3 class="title-area">Software</h3>
+      <h3 class="title-area">Soft skills</h3>
 
       <div class="single-skill">
-        <span class="topic">photoshop</span>
-        <span class="percent">80%</span>
+        <span class="topic">Problem solving</span>
+        <span class="percent">90%</span>
         <span class="bar bar-6"></span>
       </div>
       <div class="single-skill">
-        <span class="topic">illustrator</span>
-        <span class="percent">65%</span>
+        <span class="topic">Organization</span>
+        <span class="percent">75%</span>
         <span class="bar bar-7"></span>
       </div>
       <div class="single-skill">
-        <span class="topic">premiere pro</span>
-        <span class="percent">70%</span>
+        <span class="topic">leadership</span>
+        <span class="percent">80%</span>
         <span class="bar bar-8"></span>
       </div>
       <div class="single-skill">
-        <span class="topic">office</span>
-        <span class="percent">90%</span>
+        <span class="topic">time management</span>
+        <span class="percent">85%</span>
         <span class="bar bar-9"></span>
       </div>
     </div>
@@ -137,8 +143,8 @@
 
 <!-- TIMELINE-->
 
-<section class="design-section">
-  <h2 id="experiences">Experiences</h2>
+<section class="design-section" id="experiences">
+  <h2>Experiences</h2>
   <div class="timeline">
   <div class="timeline-empty"></div>
     <div class="timeline-middle">
@@ -195,5 +201,18 @@
     loop:true
   });
 </script>
+
+<!-- SCRIPT FOR MOBILE -->
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".input-mobile", {
+    strings: ["Diego Maggioni.","Web Developer."],
+    typeSpeed: 70,
+    backSpeed: 60,
+    loop:true
+  });
+</script>
+
 </body>
 </html>

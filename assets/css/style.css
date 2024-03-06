@@ -26,7 +26,7 @@ body {
   width: 100%;
   height: 100%;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/background2.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url(../img/background1.jpeg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -106,14 +106,20 @@ ul li a:hover{
 }
 
 
+/* HERO STYLE */
+
 .container {
   padding-top: 120px;
   
 }
 
+.hero-text-mobile {
+  display: none;
+}
+
 .hero-text {
  
-  padding: 200px 80px;
+  padding: 150px 150px;
 }
 
 .hero-text h1 {
@@ -123,6 +129,7 @@ ul li a:hover{
   line-height: 1.2;
   margin: 20px 0 20px;
 }
+
 
 .hero-text h3 {
   color: #eee;
@@ -158,7 +165,7 @@ ul li a:hover{
   transition: .4s;
 }
 
-.hero-text span {
+.hero-text span.input {
   color: var(--primary-color);
 }
 
@@ -185,13 +192,11 @@ ul li a:hover{
 
 
 
-
 /* MOBILE STYLE */
 
 @media (width < 750px) {
   nav .checkbox {
-    display: block;
-    
+    display: block;    
   }
 
   ul {
@@ -214,5 +219,43 @@ ul li a:hover{
   ul li a {
     font-size: 1.25rem;
   }
-}
 
+  .hero{
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(../img/background1-small.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .hero-text{
+    padding: 300px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+
+  .hero-text p {
+    padding: 0 30px;
+   text-align: center;
+  }
+
+  .hero-text #title-desktop{
+    display: none;
+  }
+
+  .hero-text-mobile {
+    display: block;
+    text-align: center;
+  } 
+
+  .hero-text-mobile .input-mobile {
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+  
+
+  .input-mobile{
+    color: var(--primary-color);
+  }
+  
+}
