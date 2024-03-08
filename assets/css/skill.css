@@ -82,19 +82,19 @@ body {
   }
   
   .bar-1 {
-    width: 95%;
+    width: 85%;
   }
   
   .bar-2 {
-    width: 90%;
-  }
-  
-  .bar-3 {
     width: 80%;
   }
   
-  .bar-4,  .bar-5 {
+  .bar-3 {
     width: 75%;
+  }
+  
+  .bar-4,  .bar-5 {
+    width: 65%;
   }
   
   .bar-6 {

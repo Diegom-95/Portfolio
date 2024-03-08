@@ -29,7 +29,6 @@
 }
 
 
-
 .design {
   display: flex;
   align-items: center;
@@ -67,6 +66,8 @@ h3 {
 .timeline-component {
   margin: 0px 20px 20px 20px;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .timeline {
