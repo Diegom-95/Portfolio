@@ -73,3 +73,22 @@ textarea {
   text-align: center;
 }  
 
+
+
+@media only screen and (max-width: 768px) {
+ 
+  form {
+    text-align: center;
+  }
+
+  .feedback-input {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  input[type="submit"] {
+    width: 80%;
+    margin: 10px auto;
+    
+  }
+}
