@@ -2,4 +2,4 @@ Diego Maggioni's Personal Portfolio Website
 
 [Website](https://diegomaggioni.netlify.app)
 
-[Presentation](https://github.com/Diegom-95/Portfolio/blob/main/assets/Presentazione_portfolio.pdf) 
+[Presentation](https://drive.google.com/file/d/1pr4pSg9BVvuz5lDFxDmRyw06Df_D8xVf/view?usp=drive_link) 
