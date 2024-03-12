@@ -14,7 +14,7 @@
 }
 
 body {
-  background: url("wallpaper.jpg");
+  background: url("../img/wallpaper.jpg");
   background-size: cover;
 }
 
