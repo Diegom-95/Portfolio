@@ -256,6 +256,10 @@ ul li a:hover{
   .hero-text-mobile {
     display: block;
     text-align: center;
+    color: #eee;
+    font-size: 30px ;
+    padding-top: 25px;
+
   } 
 
   .hero-text-mobile .input-mobile {
