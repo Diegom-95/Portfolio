@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Diego Maggioni">
+  <meta name="description" content="Portfolio developed for Start2impact project"/>
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://diegom-95.github.io/Portfolio/" />
+  <meta property="og:title" content="Diego Maggioni" />
+  <meta property="og:image" content="https://diegom-95.github.io/Portfolio/assets/img/og-image.jpg"/>
+  <meta property="og:description" content="Portfolio" />
+  <meta property="og:locale" content="it_IT" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <!--EMAILJS SCRIPT-->
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init({
+          publicKey: "tCpFGUX_EwT_T8j9e",
+        });
+    })();
+  </script>
+
+  <script src="assets/script/script.js"></script>
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/skill.css">
+  <link rel="stylesheet" href="assets/css/timeline.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <link rel="stylesheet" href="assets/css/mobile-tablet-style.css">
+  <title>Diego Maggioni - Web Developer</title>
+</head>
+<body>
+<section class="hero"> 
+  <div class="main-width">
+    <header class="header">
+      <!---- NAVIGATION BAR-->
+      <nav class="nav-content">
+        <div class="logo"><a href="index.html">Diego Maggioni</a></div>
+        <label for="check" class="checkbox">
+          <img class="menu-line" src="assets/img/menu-line.png">
+        </label>
+        <input type="checkbox" name="checkbox" id="check">
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+      <!---- MAIN-->
+    <div class="main">
+      <div class="hero-text">
+        <h3>Hi, There!</h3>
+        <h1 id="title-desktop">I Am <span class="input"></span></h1>  
+
+      <div class="hero-text-mobile">   <!-- TITLE FOR MOBILE-->
+        <h1>I Am </h1>
+        <h1 class="input-mobile"></h1>
+      </div>    
+
+        <p>
+          My name is Diego, I'm a full stack web developer based in Pontremoli, Italy. My passions are computer science, mountain and football. 
+        </p>
+        <div class="social">
+          <a href="https://www.facebook.com/diego.maggioni.3/" target="_blank" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="https://www.instagram.com/diegom_95/" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/diego-maggioni-04082529b/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Diegom-95" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <a href="assets/cv/CV Diego Maggioni.pdf" download="CV-Diego-Maggioni.pdf"><button type="button">Download my CV</button></a>
+      </div>
+    </div>
+
+  </div>  
+</section>   
+
+   <!---- SKILLS-->
+<section class="skill-area" id="skills">
+  <div class="content">
+    <div class="section-header">
+      <h2>My Skillset</h2>
+    </div>
+    <div class="wrapper custom">
+      <div class="skill-box">
+        <h3 class="title-area">Programming</h3>
+
+        <div class="single-skill">
+          <span class="topic">html</span>
+          <span class="percent">85%</span>
+          <span class="bar bar-1"></span>
+        </div>
+        <div class="single-skill">
+          <span class="topic">css</span>
+          <span class="percent">80%</span>
+          <span class="bar bar-2"></span>
+        </div>
+        <div class="single-skill">
+          <span class="topic">sass</span>
+          <span class="percent">75%</span>
+          <span class="bar bar-3"></span>
+        </div>
+        <div class="single-skill">
+          <span class="topic">bootstrap</span>
+          <span class="percent">75%</span>
+          <span class="bar bar-4"></span>
+        </div>
+        <div class="single-skill">
+          <span class="topic">python</span>
+          <span class="percent">65%</span>
+          <span class="bar bar-5"></span>
+        </div>
+      </div>
+     
+    <div class="skill-box">
+      <h3 class="title-area">Soft skills</h3>
+
+      <div class="single-skill">
+        <span class="topic">Problem solving</span>
+        <span class="percent">90%</span>
+        <span class="bar bar-6"></span>
+      </div>
+      <div class="single-skill">
+        <span class="topic">Organization</span>
+        <span class="percent">75%</span>
+        <span class="bar bar-7"></span>
+      </div>
+      <div class="single-skill">
+        <span class="topic">leadership</span>
+        <span class="percent">80%</span>
+        <span class="bar bar-8"></span>
+      </div>
+      <div class="single-skill">
+        <span class="topic">time management</span>
+        <span class="percent">85%</span>
+        <span class="bar bar-9"></span>
+      </div>
+    </div>
+  </div> 
+  </div>  
+  </div>
+</section>
+
+<!-- TIMELINE-->
+
+<section class="design-section" id="experiences">
+  <h2>Experiences</h2>
+  <div class="timeline">
+  <div class="timeline-empty"></div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h3>2024</h3>
+      <p>Enrolled to a master's degree
+        in full stack development at start2impact university.</p>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h3>2023</h3>
+      <p>Became production manager in the food industry five years after being hired.</p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+      <div class="timeline-empty">
+    </div>
+    <div class="timeline-empty">
+      
+    </div>
+  
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class=" timeline-component timeline-content">
+      <h3>2014</h3>
+      <p>Graduated as an accounting programmer technician.</p>
+    </div>
+  </div>
+  </div> 
+</section>
+
+<!-- CONTACT FORM-->
+<form id="contact"> 
+  <h3 class="contact-title">Contact me</h3>     
+  <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" />   
+  <input required name="email" type="text" id="email" class="feedback-input" placeholder="Email" />
+  <input name="subject" type = "text" id="subject" class="feedback-input" placeholder="Subject"></textarea>
+  <textarea required name="text" id="message" id="message" class="feedback-input" placeholder="Message"></textarea>
+  <input type="submit" onclick="sendMail()" value="SUBMIT">
+</form>
+
+
+<!-- SCRIPT  -->
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".input", {
+    strings: ["Diego Maggioni.","Web Developer."],
+    typeSpeed: 70,
+    backSpeed: 60,
+    loop:true
+  });
+</script>
+
+<!-- SCRIPT FOR MOBILE -->
+<script type="text/javascript" src="js/script.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".input-mobile", {
+    strings: ["Diego Maggioni.","Web Developer."],
+    typeSpeed: 70,
+    backSpeed: 60,
+    loop:true
+  });
+</script>
+
+</body>
+</html>

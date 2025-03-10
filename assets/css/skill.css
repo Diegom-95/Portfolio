@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #265073;
+  --max-width: 100%;
+}
+
+/* GENERAL STYLE */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.skill-area {
+    padding-top: 5%;
+    padding-bottom: 11%;
+  }
+  
+  .custom {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .section-header h2 {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin: 0;
+  }
+  
+  .title-area {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .single-skill {
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .topic {
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 500;
+  }
+  
+  .bar {
+    position: absolute;
+    bottom: -.75rem;
+    height: .25rem;
+    background-color: var(--primary-color);
+  }
+  
+  .bar-1 {
+    width: 85%;
+  }
+  
+  .bar-2 {
+    width: 80%;
+  }
+  
+  .bar-3 {
+    width: 75%;
+  }
+  
+  .bar-4,  .bar-5 {
+    width: 65%;
+  }
+  
+  .bar-6 {
+    width: 90%;
+  }
+  
+  .bar-7 {
+    width: 75%;
+  }
+  
+  .bar-8 {
+    width: 80%;
+  }
+
+  .bar-9 {
+    width: 85%;
+  }
+  
+@media  screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}  
+
+@media screen and (min-width: 1024px) {
+    body {
+        margin: 0;
+    }
+
+    section {
+        padding: 3rem 0 2rem;
+    }
+
+    .custom {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
