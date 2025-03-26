@@ -196,59 +196,12 @@
 <form id="contact"> 
   <h3 class="contact-title">Contact me</h3>     
   <input name="name" type="text" id="name" class="feedback-input" placeholder="Name" />   
-<<<<<<< HEAD
   <input required name="email" type="text" id="email" class="feedback-input" placeholder="Email" />
   <input name="subject" type = "text" id="subject" class="feedback-input" placeholder="Subject"></textarea>
-=======
-  <input name="email" type="text" id="email" class="feedback-input" placeholder="Email" required/>
-  <input name="subject" type = "text" id="subject" class="feedback-input" placeholder="Subject" required/>
->>>>>>> 8f3b19e8c843eaff7d13b97f01acfbd8ba2d3aa9
   <textarea required name="text" id="message" id="message" class="feedback-input" placeholder="Message"></textarea>
   <input type="submit" onclick="sendMail()" value="SUBMIT">
 </form>
 
-<<<<<<< HEAD
-=======
-<script>
-  function sendMail() {
-    // Validazione dell'email
-    var email = document.getElementById("email").value;
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailPattern.test(email)) {
-      alert("Please enter a valid email address.");
-      return false;
-    }
-
-    // Validazione del nome
-    var name = document.getElementById("name").value;
-    if (name.trim() === "") {
-      alert("Please enter your name.");
-      return false;
-    }
-
-    // Validazione del soggetto
-    var subject = document.getElementById("subject").value;
-    if (subject.trim() === "") {
-      alert("Please enter a subject.");
-      return false;
-    }
-
-    // Validazione del messaggio
-    var message = document.getElementById("message").value;
-    if (message.trim() === "") {
-      alert("Please enter your message.");
-      return false;
-    }
-
-    // Invio del modulo se tutte le validazioni sono passate
-    // Qui puoi aggiungere la tua logica per l'invio del modulo
-    // ad esempio, tramite AJAX o tramite un'altra richiesta HTTP
-
-    alert("Form submitted successfully!");
-    return true;
-  }
-</script>
->>>>>>> 8f3b19e8c843eaff7d13b97f01acfbd8ba2d3aa9
 
 <!-- SCRIPT  -->
 <script type="text/javascript" src="js/script.js"></script>
