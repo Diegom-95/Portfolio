@@ -93,7 +93,11 @@ body {
     width: 75%;
   }
   
-  .bar-4,  .bar-5 {
+  .bar-4 {
+    width: 85%;
+  }
+
+  .bar-5 {
     width: 65%;
   }
   
