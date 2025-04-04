@@ -9,3 +9,5 @@ function sendMail(){
 
   emailjs.send("service_5nykcva","template_raj2ueb",parms).then(alert("Email Sent!"))
 }
+
+

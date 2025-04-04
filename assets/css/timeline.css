@@ -18,14 +18,15 @@
   align-items: center;
   justify-content: center;
   background-color: #1f1f1f;
-  min-height: 100vh;
-  padding: 100px 0;
+  min-height: auto;
+  padding: 60px 0;
+  margin-bottom: 40px;
 }
 
 .design-section h2 {
   color: white;
   font-size: 40px;
-  padding-bottom: 60px;
+  padding-bottom: 40px;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
 }
@@ -43,6 +44,7 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .timeline-content {
@@ -58,21 +60,21 @@
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
-  opacity: 0; /* Start hidden */
-  animation: fadeIn 1s ease-in forwards; /* Apply fade-in animation */
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
 
 /* Assign delays to each timeline entry (oldest to newest) */
 .timeline-content[data-year="2014"] {
-  animation-delay: 0s; /* Oldest entry appears first */
+  animation-delay: 0s;
 }
 
 .timeline-content[data-year="2023"] {
-  animation-delay: 1s; /* Second entry appears after 1s */
+  animation-delay: 1s;
 }
 
 .timeline-content[data-year="2024"] {
-  animation-delay: 2s; /* Most recent entry appears last */
+  animation-delay: 2s;
 }
 
 h3 {
@@ -94,9 +96,9 @@ h3 {
     background-color: var(--primary-color);
     width: 3px;
     height: 100%;
-    transform: scaleY(0); /* Start with no height */
-    transform-origin: top; /* Grow from the top */
-    animation: growLine 3s ease-in-out forwards; /* Grow the line over 3s */
+    transform: scaleY(0);
+    transform-origin: top;
+    animation: growLine 3s ease-in-out forwards;
   }
 
   .main-middle {
@@ -105,32 +107,58 @@ h3 {
 
   .timeline-circle {
     position: absolute;
-    top: 0;
+    top: 50%; 
     left: 50%;
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background-color: var(--primary-color);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    opacity: 0; /* Start hidden */
-    animation: scaleIn 0.5s ease-in-out forwards; /* Scale in the circle */
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    animation: scaleIn 0.5s ease-in-out forwards;
   }
 
-  /* Assign delays to each circle to match the timeline entries */
+  /* Mantieni i ritardi per le animazioni dei puntini */
   .timeline-middle:nth-child(2) .timeline-circle {
-    top: 50px; /* Adjust position to align with 2024 entry */
-    animation-delay: 2s; /* Matches 2024 entry */
+    animation-delay: 2s; /* Per 2024 */
   }
 
   .timeline-middle:nth-child(5) .timeline-circle {
-    top: 220px; /* Adjust position to align with 2023 entry */
-    animation-delay: 1s; /* Matches 2023 entry */
+    animation-delay: 1s; /* Per 2023 */
   }
 
   .timeline-middle:nth-child(8) .timeline-circle {
-    top: 380px; /* Adjust position to align with 2014 entry */
-    animation-delay: 0s; /* Matches 2014 entry */
+    animation-delay: 0s; /* Per 2014 */
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .timeline-middle,
+  .timeline-circle {
+    display: none;
+  }
+
+  .timeline-empty {
+    display: none;
+  }
+
+  .design-section {
+    padding: 40px 0;
+  }
+
+  .design-section h2 {
+    font-size: 32px;
+    padding-bottom: 30px;
+  }
+
+  .timeline {
+    width: 90%;
+  }
+
+  .timeline-content {
+    margin: 0.5rem;
+    margin-bottom: 15px;
   }
 }
 
@@ -158,10 +186,10 @@ h3 {
 @keyframes scaleIn {
   from {
     opacity: 0;
-    transform: translateX(-50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
   }
   to {
     opacity: 1;
-    transform: translateX(-50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
   }
 }
