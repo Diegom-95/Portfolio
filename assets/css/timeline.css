@@ -6,12 +6,12 @@
 }
 
 /* GENERAL STYLE */
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 .design-section {
   display: flex;
   flex-direction: column;
@@ -26,8 +26,9 @@
   color: white;
   font-size: 40px;
   padding-bottom: 60px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
 }
-
 
 .design {
   display: flex;
@@ -48,7 +49,7 @@
   padding: 20px;
   background: #1f1f1f;
   -webkit-box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
-          box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
+  box-shadow: 5px 5px 10px #1a1a1a, -5px -5px 10px #242424;
   border-radius: 5px;
   color: white;
   padding: 1.75rem;
@@ -57,6 +58,21 @@
   margin: 1rem;
   margin-bottom: 20px;
   border-radius: 6px;
+  opacity: 0; /* Start hidden */
+  animation: fadeIn 1s ease-in forwards; /* Apply fade-in animation */
+}
+
+/* Assign delays to each timeline entry (oldest to newest) */
+.timeline-content[data-year="2014"] {
+  animation-delay: 0s; /* Oldest entry appears first */
+}
+
+.timeline-content[data-year="2023"] {
+  animation-delay: 1s; /* Second entry appears after 1s */
+}
+
+.timeline-content[data-year="2024"] {
+  animation-delay: 2s; /* Most recent entry appears last */
 }
 
 h3 {
@@ -67,22 +83,26 @@ h3 {
   margin: 0px 20px 20px 20px;
 }
 
-
-
 @media screen and (min-width: 768px) {
   .timeline {
     display: grid;
     grid-template-columns: 1fr 3px 1fr;
   }
+
   .timeline-middle {
     position: relative;
     background-color: var(--primary-color);
     width: 3px;
     height: 100%;
+    transform: scaleY(0); /* Start with no height */
+    transform-origin: top; /* Grow from the top */
+    animation: growLine 3s ease-in-out forwards; /* Grow the line over 3s */
   }
+
   .main-middle {
     opacity: 0;
   }
+
   .timeline-circle {
     position: absolute;
     top: 0;
@@ -92,6 +112,56 @@ h3 {
     border-radius: 50%;
     background-color: var(--primary-color);
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0; /* Start hidden */
+    animation: scaleIn 0.5s ease-in-out forwards; /* Scale in the circle */
+  }
+
+  /* Assign delays to each circle to match the timeline entries */
+  .timeline-middle:nth-child(2) .timeline-circle {
+    top: 50px; /* Adjust position to align with 2024 entry */
+    animation-delay: 2s; /* Matches 2024 entry */
+  }
+
+  .timeline-middle:nth-child(5) .timeline-circle {
+    top: 220px; /* Adjust position to align with 2023 entry */
+    animation-delay: 1s; /* Matches 2023 entry */
+  }
+
+  .timeline-middle:nth-child(8) .timeline-circle {
+    top: 380px; /* Adjust position to align with 2014 entry */
+    animation-delay: 0s; /* Matches 2014 entry */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes growLine {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) scale(0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) scale(1);
   }
 }
