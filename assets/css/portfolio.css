@@ -4,6 +4,7 @@
   --primary-color: #265073;
   --max-width: 100%;
   --transition-speed: 0.3s;
+  --nav-height: 70px; 
 }
 
 /* General Styles */
@@ -20,12 +21,60 @@ body {
   overflow-x: hidden;
 }
 
+/* Navigation Bar */
+.nav-content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--nav-height); 
+  background: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000; 
+}
+
+.nav-content .logo a {
+  color: #eee;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-content ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-content ul li a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color var(--transition-speed) ease;
+}
+
+.nav-content ul li a:hover {
+  color: var(--primary-color);
+}
+
+
+.checkbox, #check {
+  display: none;
+}
+
 /* Main Section */
+.main {
+  margin-top: var(--nav-height); 
+}
+
 .main h1 {
   font-size: 40px;
   color: #eee;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 40px; 
   font-weight: 600;
   opacity: 0;
   animation: fadeIn 1s ease-in forwards;
@@ -59,11 +108,11 @@ body {
 .project:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  border-radius: 15px;
 }
 
 .project:hover img {
   transform: scale(1.05);
+  border-radius: 15px;
 }
 
 .project p {
@@ -75,7 +124,9 @@ body {
   transition: color var(--transition-speed) ease;
 }
 
-
+.project:hover p {
+  color: var(--primary-color);
+}
 
 /* Animation */
 @keyframes fadeIn {
@@ -93,7 +144,7 @@ body {
 @media (max-width: 768px) {
   .main h1 {
     font-size: 32px;
-    padding-top: 80px;
+    padding-top: 30px;
   }
 
   .projects-container {
@@ -103,5 +154,17 @@ body {
 
   .project img {
     height: 200px;
+  }
+
+
+  .checkbox {
+    display: block;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .nav-content ul li {
+    margin: 10px 0;
   }
 }
